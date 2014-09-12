@@ -5,13 +5,13 @@
     background:#A9A9A9;
     color:#000;
   }
-  .colors{ 
+  .colors{
     background:white;
     width:352px;
     font-weight:bold;
     font-size:22px;
     text-shadow:
-     -1px -1px 0 #000,  
+     -1px -1px 0 #000,
      1px -1px 0 #000,
      -1px 1px 0 #000,
      1px 1px 0 #000;
@@ -21,14 +21,13 @@
   .yellow{ color:yellow; }
 </style>
 Flashy App
-
 <form action="/flash" method="post">
   <label for="times">Number of Flashes</label><br>
   <input id="times" type="text" name="post[times]" /><br>
   <p>=====================================</p>
   <div class="colors">
     <label for="color">Color</label><br>
-    <input id="color" type="radio" name="post[color]" value="green"><span class='green'>Green</span>
+    <input id="color" type="radio" name="post[color]" value="green" checked><span class='green'>Green</span>
     <input id="color" type="radio" name="post[color]" value="red"><span class='red'>Red</span>
     <input id="color" type="radio" name="post[color]" value="yellow"><span class='yellow'>Yellow</span>
   </div>
