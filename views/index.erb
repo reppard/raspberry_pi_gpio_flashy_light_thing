@@ -35,6 +35,20 @@ Flashy App
   <input type="submit" value="Submit">
 </form>
 
+<form action="/light_on" method="post">
+  <label for="time">Number of Flashes</label><br>
+  <input id="time" type="text" name="post[time]" /><br>
+  <p>=====================================</p>
+  <div class="colors">
+    <label for="color">Color</label><br>
+    <input id="color" type="radio" name="post[color]" value="green" checked><span class='green'>Green</span>
+    <input id="color" type="radio" name="post[color]" value="red"><span class='red'>Red</span>
+    <input id="color" type="radio" name="post[color]" value="yellow"><span class='yellow'>Yellow</span>
+  </div>
+  <p>=====================================</p>
+  <input type="submit" value="Submit">
+</form>
+
 <a href="/disco">
    <button>DISCO!!!</button>
 </a>

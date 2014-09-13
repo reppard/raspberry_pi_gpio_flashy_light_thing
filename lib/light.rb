@@ -32,4 +32,13 @@ class Light
     end
     })
   end
+
+  def on_for(time)
+    Process.detach(fork{
+      puts "LIGHT ON"
+      on
+      sleep time
+      off
+    })
+  end
 end

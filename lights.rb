@@ -17,6 +17,15 @@ post '/flash' do
   redirect '/'
 end
 
+post '/light_on' do
+  @params = params[:post]
+  time = @params["time"].to_i
+  color = @params["color"]
+  light = Light.new(color)
+  light.on_for(time)
+  redirect '/'
+end
+
 get '/disco' do
   lights = [ Light.new("green"),
              Light.new("red"),
