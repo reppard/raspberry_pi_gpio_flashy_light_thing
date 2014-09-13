@@ -1,26 +1,27 @@
 <html>
 <body>
 <style>
-  body {
-    background:#A9A9A9;
-    color:#000;
-  }
-  .colors{
-    background:white;
-    width:352px;
-    font-weight:bold;
-    font-size:22px;
-    text-shadow:
-     -1px -1px 0 #000,
-     1px -1px 0 #000,
-     -1px 1px 0 #000,
-     1px 1px 0 #000;
-  }
-  .green{ color:green; }
-  .red{ color:red; }
-  .yellow{ color:yellow; }
+body {
+  background:#A9A9A9;
+  color:#000;
+}
+.colors{
+  background:white;
+  width:352px;
+  font-weight:bold;
+  font-size:22px;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+.green{ color:green; }
+.red{ color:red; }
+.yellow{ color:yellow; }
 </style>
 Flashy App
+<h1>FLASHY</h1>
 <form action="/flash" method="post">
   <label for="times">Number of Flashes</label><br>
   <input id="times" type="text" name="post[times]" /><br>
@@ -35,8 +36,9 @@ Flashy App
   <input type="submit" value="Submit">
 </form>
 
+<h1>LIGHT ON FOR</h1>
 <form action="/light_on" method="post">
-  <label for="time">Number of Flashes</label><br>
+  <label for="time">Number of Seconds</label><br>
   <input id="time" type="text" name="post[time]" /><br>
   <p>=====================================</p>
   <div class="colors">
@@ -50,7 +52,7 @@ Flashy App
 </form>
 
 <a href="/disco">
-   <button>DISCO!!!</button>
+  <button>DISCO!!!</button>
 </a>
 
 </body>
